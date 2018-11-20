@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Sissors Paper</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Font Reference -->
+        <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+
+        <!-- Bootstrap Reference -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <!-- My css Reference -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <!-- Firebase Reference -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+
+    </head>
+    <body>
+        <div class="container container-fluid text-center" id="whole-container">
+
+            <!-- Heading jumbotron -->
+            <div class="jumbotron">
+                <div id="h2-heading-div"><h2 id="h1-heading"><strong>Multiplayer Rock Paper Sissors</strong></h2></div>
+                <!-- <div id="image-heading-div"><img class="img-fluid"  id="image-heading" src="assets/images/rpsHead1.jpg"></div> -->
+            </div>
+
+            <!-- Login row -->
+            <div class="row text-center justify-content-center login-row">
+                <!-- <div class="col-xs-12 pre-connection">
+                    <h4>Connecting.....</h4>
+                </div> -->
+                <div class="col-xs-12 pre-login">
+                    <div class="input-group">
+                        <input type="text" class="form-control login-input" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                          <button class="btn btn-secondary" id="login-btn" type="button">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player button selection -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>player1</h1>
+                    <div class="selectionButton1">
+                    <button class="btn btn-secondary" id="rock" type="submit">ROCK</button>
+                    <button class="btn btn-secondary" id="papaer" type="submit">PAPER</button>
+                    <button class="btn btn-secondary" id="scissors" type="submit">SCISSORS</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    Result
+                </div>
+                <div class="col-md-4">
+                    <h1>player2</h1>
+                    <div class="selectionButton2">
+                        <button class="btn btn-secondary" id="rock" type="submit">ROCK</button>
+                        <button class="btn btn-secondary" id="papaer" type="submit">PAPER</button>
+                        <button class="btn btn-secondary" id="scissors" type="submit">SCISSORS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/javascript/app.js"></script>
+    </body>
+</html>
