@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+
         <meta charset="UTF-8">
         <title>Rock Sissors Paper</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,14 +28,14 @@
             <!-- Heading jumbotron -->
             <div class="jumbotron">
                 <div id="h2-heading-div"><h2 id="h1-heading"><strong>Multiplayer Rock Paper Sissors</strong></h2></div>
-                <!-- <div id="image-heading-div"><img class="img-fluid"  id="image-heading" src="assets/images/rpsHead1.jpg"></div> -->
+                <div id="image-heading-div"><img class="img-fluid"  id="image-heading" src="assets/images/rpsHead1.jpg"></div>
             </div>
 
             <!-- Login row -->
             <div class="row text-center justify-content-center login-row">
-                <!-- <div class="col-xs-12 pre-connection">
+                <div class="col-xs-12 pre-connection">
                     <h4>Connecting.....</h4>
-                </div> -->
+                </div>
                 <div class="col-xs-12 pre-login">
                     <div class="input-group">
                         <input type="text" class="form-control login-input" placeholder="" aria-label="" aria-describedby="basic-addon1">
@@ -43,31 +44,99 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xs-12 post-login">
+                    <h2>Hi,
+                    <span class="player-name-display"></span>
+                    ! You are Player
+                    <span class="player-number-display"></span>
+                    </h2>
+                </div>
+                <div class="col-xs-12 pending-login">
+                    Two players playing. Wait for your slot...
+                </div>
             </div>
 
-            <!-- Player button selection -->
-            <div class="row">
+            <!-- Player Row -->
+            <div class="row multi-player-row">
+
+                <!-- Player 1 Column -->
                 <div class="col-md-4">
-                    <h1>player1</h1>
-                    <div class="selectionButton1">
-                    <button class="btn btn-secondary" id="rock" type="submit">ROCK</button>
-                    <button class="btn btn-secondary" id="papaer" type="submit">PAPER</button>
-                    <button class="btn btn-secondary" id="scissors" type="submit">SCISSORS</button>
-                    </div>
+                    <h4 id="player-1">Waiting for Player 1</h4>
+                    <p class="status p1-status">
+                        <strong>Wins:</strong>
+                        <span id="p1-wins">0</span>
+                        <strong>Losses:</strong>
+                        <span id="p1-loss">0</span>
+                    </p>
+                    <p class="selections p1-selections">
+                        <button id="rock" data-player="1" class="btn btn-default selection">Rock</button>
+                        <button id="paper" data-player="1" class="btn btn-default selection">Paper</button>
+                        <button id="scissors" data-player="1" class="btn btn-default selection">Scissors</button>
+                    </p>
+                    <p class="pending-selection p1-pending-selection">
+                        Pending Selection...
+                    </p>
+                    <p class="selection-made p1-selection-made">
+                        Selection Made.
+                    </p>
+                    <p class="selection-reveal p1-selection-reveal">
+    
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    Result
+
+                <!-- Feedback Column -->
+                <div class="col-md-4" id="feedback">
+                    <!-- Feedback goes here -->
                 </div>
+
+                <!-- Player 2 Column -->
                 <div class="col-md-4">
-                    <h1>player2</h1>
-                    <div class="selectionButton2">
-                        <button class="btn btn-secondary" id="rock" type="submit">ROCK</button>
-                        <button class="btn btn-secondary" id="papaer" type="submit">PAPER</button>
-                        <button class="btn btn-secondary" id="scissors" type="submit">SCISSORS</button>
+                    <h4 id="player-2">Waiting for Player 2</h4>
+                    <p class="status p2-status">
+                        <strong>Wins:</strong>
+                        <span id="p2-wins">0</span>
+                        <strong>Losses:</strong>
+                        <span id="p2-loss">0</span>
+                    </p>
+                    <p class="selections p2-selections">
+                        <button id="rock" data-player="2" class="btn btn-default selection">Rock</button>
+                        <button id="paper" data-player="2" class="btn btn-default selection">Paper</button>
+                        <button id="scissors" data-player="2" class="btn btn-default selection">Scissors</button>
+                    </p>
+                    <p class="pending-selection p2-pending-selection">
+                        Pending Selection...
+                    </p>
+                    <p class="selection-made p2-selection-made">
+                        Selection Made.
+                    </p>
+                    <p class="selection-reveal p2-selection-reveal">
+        
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chat Row -->
+            <div class = "row chat-row">
+                <div class="col-md-12">
+                    <div calss="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-left">Chat</h3>
+                        </div>
+                        <ul class="chat-block list-unstyled text-left" id="chat-log">
+                            <!-- chat list goes here -->
+                        </ul>
+                        <form role="chat" class="panel-footer">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="chat">
+                                <button class="btn btn-default" id="send-chat" type="submit">Send</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="assets/javascript/app.js"></script>
+
+        <!-- Reference to my javascript -->
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
     </body>
 </html>

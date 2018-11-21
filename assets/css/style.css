@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body:before{
+    content: '';
+    position: fixed; 
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/background6.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    z-index: -9;
+}
+body{
+    font-family: 'Eczar', serif;
+    color:wheat;
+}
+#whole-container{
+    width:100%;
+    height: auto;
+    align-content: center;
+}
+
+/* Heading Jumbotron */
+.jumbotron{
+    margin: auto;
+    height:300px;
+    width: 95%;
+    padding: 10px;
+    background-color: rgb(121, 236, 14);
+    background: linear-gradient(0deg, rgb(26, 56, 1), rgb(118, 252, 84));
+    border: 2px solid wheat;
+    opacity: .9;
+    border-radius: 25px;
+}
+
+#h2-heading-div{
+    max-height: 30%;
+    margin-bottom: 10px;
+    color:rgb(13, 77, 15);
+}
+#image-heading-div{
+    max-height: 70%;
+    overflow: hidden;
+    margin-top:10px;
+    border-radius: 20px;
+} 
+#image-heading{
+    width: auto;
+    width:680px;
+    height:210px;
+} 
+
+/* Login Row */
+.login-row{
+    width: 95%;
+    margin:10px auto;
+    padding: 30px;
+    opacity: .95;
+}
+.pre-connection{
+    color: wheat;
+}
+.pre-login{
+    display: none; 
+}
+.login-input{
+    border: 2px solid rgb(56, 50, 39);
+    background-color: wheat;
+}
+.login-input:focus{
+    color:black;
+    background: linear-gradient(0deg, rgb(226, 226, 78), rgb(148, 202, 47));
+    border: 2px solid rgb(81, 139, 13);
+}
+#login-btn{
+    background: linear-gradient(0deg, rgb(22, 22, 1), wheat);
+    border-radius: 5px;
+    border: 2px solid rgb(56, 50, 39);
+    color: black;
+}
+#login-btn:hover{
+    background: linear-gradient(0deg, rgb(226, 226, 78), rgb(148, 202, 47));
+    border: 2px solid rgb(81, 139, 13);
+}
+.post-login{
+    display: none;
+    color: green;
+}
+.pending-login{
+    display: none;
+}
+
+/* Player Row */
+.multi-player-row{
+    opacity: .95;
+    width: 95%;
+    margin:10px auto;
+    padding: 30px;
+}
+.selection{
+    background: linear-gradient(0deg, rgb(22, 22, 1), wheat);
+    border-radius: 10px;
+    border: 2px solid rgb(56, 50, 39);
+}
+.selection:hover{
+    background: linear-gradient(0deg, rgb(226, 226, 78), rgb(148, 202, 47));
+    border: 2px solid rgb(81, 139, 13);
+}
+.status,.selections,.pending-selection,.selection-made,.selection-reveal{
+    display: none;
+}
+
+/* Chat Row */
+.panel-heading{
+    background-color: green;
+    margin: 0px;
+    color: wheat;
+    padding: 10px;
+    border: 2px solid rgb(81, 139, 13);
+    border-radius: 5px;
+}
+.panel-title{
+    margin: 0px;
+}
+.chat-block{
+    background-color: wheat;
+    border: 2px solid rgb(81, 139, 13);
+    border-radius: 5px;
+    margin: 0px;
+}
+li{
+    color: green;
+}
+.panel-footer{
+    border: 2px solid rgb(81, 139, 13);
+    border-radius: 5px;
+}
+#chat{
+    background-color: wheat;
+    color:green;
+}
+#send-chat{
+    background: linear-gradient(0deg, rgb(0, 201, 67), green);
+    border-radius: 5px;
+    border: 2px solid rgb(56, 50, 39);
+}
+#send-chat:hover{
+    background: linear-gradient(0deg, rgb(226, 226, 78), rgb(148, 202, 47));
+    border: 2px solid rgb(81, 139, 13);
+}
+.current-user{
+    color: red;
+}
+.other-user{
+    color: blue;
+}
+.system{
+    color: black;
+}
