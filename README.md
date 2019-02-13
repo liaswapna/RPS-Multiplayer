@@ -66,4 +66,4 @@ In this assignment, create Rock Paper Scissors game,as multiplayer game, all wit
     
 
 ### NOTE
-* [Link to my Train Scheduler App] (https://liaswapna.github.io/RPS-Multiplayer/)
+* [Link to Rock Paper Scissors App](https://liaswapna.github.io/RPS-Multiplayer/)
